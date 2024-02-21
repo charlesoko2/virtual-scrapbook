@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Virtual Scrapbook</title>
+    <style>
+      /* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8e9a1;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Section Styles */
+.photo-section,
+.video-section,
+.love-story-section,
+.quotes-section,
+.memories-section,
+.messages-section,
+.music-section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.photo-gallery img {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.video-gallery video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.love-story-section p,
+.quotes-section blockquote,
+.memories-section p {
+  font-style: italic;
+  color: #777;
+}
+
+.messages-section form {
+  margin-bottom: 10px;
+}
+
+.music-section audio {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Additional Styles */
+.quote-author {
+  font-style: normal;
+  color: #999;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .photo-gallery img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .video-gallery video {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="scrapbook-page">
+      <h1>Virtual Scrapbook</h1>
+      <div class="photo-section">
+        <h2>photos</h2>
+        <div class="photo-gallery">
+          <img src="image/introd.JPG" alt="photo" />
+          <img src="image/date.JPG" alt="photo" />
+          <img src="image/IMG_5871.JPG" alt="photo" />
+          <img src="image/ishio on suit.JPG" alt="photo" />
+          <img src="image/office jer.JPG" alt="photo" />
+          <img src="image/native.JPG" alt="photo" />
+          <img src="image/blue.JPG" alt="photo" />
+          <img src="image/IMG_5870.JPG" alt="photo" />
+          <img src="image/fence.JPG" alt="photo" />
+          <img src="image/IMG_5898.JPG" alt="photo" />
+          <img src="image/olar bch.JPG" alt="photo" />
+          <img src="image/bank.JPG" alt="photo" />
+          <img src="image/igele.JPG" alt="photo" />
+        </div>
+        <button class="photo-prev-btn">previous</button>
+        <button class="photo-next-btn">next</button>
+      </div>
+
+      <div class="video-section">
+        <h2>Videos</h2>
+        <div class="video-gallery">
+          <video src="image/IMG_5908.MP4" controls></video>
+          <video src="image/secv.MP4" controls></video>
+          <video src="image/vid.MP4" controls></video>
+        </div>
+        <button class="video-prev-btn">previous</button>
+        <button class="video-next-btn">next</button>
+      </div>
+
+      <div class="love-story-section">
+      <h2>Love Story</h2>
+      <p>Once upon a time we were total strangers ,then we became friends and then lovers...</p>
+    </div>
+
+    <div class="quotes-section">
+      <h2>Quotes</h2>
+      <blockquote>"Love is not just a feeling, it's an adventure."<br>"Love will always win"</blockquote>
+    </div>
+
+    <div class="memories-section">
+      <h2>Memories</h2>
+      <p>Our first date:</p>
+      <img src="image/first date.JPG" alt="Memory 1" />
+      <!-- Add more memories content here -->
+    </div>
+
+    <div class="messages-section">
+      <h2>Messages</h2>
+      <form id="message-form">
+        <input type="text" id="name-input"placeholder="Your Name" required>
+        <textarea id="message-input"placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="message-list"></div>
+      </div>
+
+    <div class="music-section">
+      <h2>Music</h2>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
