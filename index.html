@@ -1,159 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Virtual Scrapbook</title>
-    <style>
-      /* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8e9a1;
-}
-
-h1 {
-  color: #333;
-  text-align: center;
-  margin-top: 20px;
-}
-
-h2 {
-  color: #555;
-  margin-bottom: 10px;
-}
-
-/* Section Styles */
-.photo-section,
-.video-section,
-.love-story-section,
-.quotes-section,
-.memories-section,
-.messages-section,
-.music-section {
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.photo-gallery img {
-  width: 200px;
-  height: auto;
-  margin-right: 10px;
-  border-radius: 5px;
-}
-
-.video-gallery video {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
-
-.love-story-section p,
-.quotes-section blockquote,
-.memories-section p {
-  font-style: italic;
-  color: #777;
-}
-
-.messages-section form {
-  margin-bottom: 10px;
-}
-
-.music-section audio {
-  width: 100%;
-  border-radius: 5px;
-}
-
-/* Additional Styles */
-.quote-author {
-  font-style: normal;
-  color: #999;
-}
-
-.message {
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .photo-gallery img {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .video-gallery video {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-}
-
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7b12bcc245.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Wedding Invite</title>
   </head>
   <body>
-    <div class="scrapbook-page">
-      <h1>Virtual Scrapbook for MY NKEM</h1>
-      <div class="photo-section">
-        <h2>photos</h2>
-        <div class="photo-gallery">
-          <img src="image/v5.jpg" alt="photo" />
-          <img src="image/v7.jpg" alt="">
-          <img src="image/selfie.jpg" alt="">
-          <img src="image/funny vee.jpg" alt="">
-          <img src="image/v3.jpg" alt="">
-          <img src="image/vee4.jpg" alt="">
-          <img src="image/vee 1.jpg" alt="">
-          <img src="image/travel.jpg" alt="">
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">F&S</label>
+      <ul class="text">
+        <li><a href="#story" onclick="myFunction()">OUR STORY</a></li>
+        <li><a href="#stay" onclick="myFunction()">TRAVEL & STAY</a></li>
+        <li><a href="#registry" onclick="myFunction()">PROMISES</a></li>
+      </ul>
+    </nav>
+
+    <div class="home hz-margin">
+      <h3>We'er getting married</h3>
+      <h1>Fegor. & SCholar.</h1>
+      <div class="container-out">
+        <div class="container-in text">
+          Saturday, April. 13, 2024 <br />
+          ST.ANTHONY CATHOLIC CHAPLANCY,DENNIS OSADEBAY UNIVERSITY,ANWAI-ASABA
+          DELTA STATE,NIGERIA
+
+          <button class="huge-btn">RSVP</button>
         </div>
-        <button class="photo-prev-btn">previous</button>
-        <button class="photo-next-btn">next</button>
+        <img src="image/olarwedd.jpg" alt="" />
       </div>
+    </div>
 
-      <div class="video-section">
-        <h2>Videos</h2>
-        <div class="video-gallery">
-          <video src="image/IMG_225598032.MOV" controls></video>
+    <div class="home-img home-img-sm"></div>
+    <div class="timeline hz-margin reveal">
+      <h2>
+        Celebrating Our Love <br />
+        With Those We Love
+      </h2>
+      <div class="timeline-container">
+        <div class="timeline-img"></div>
+        <div class="timings">
+          <h3>01.&nbsp &nbsp Ceremony</h3>
+          <div class="text">
+            Saturday, April. 13, 2024 <br />
+            ST.ANTHONY CATHOLIC CHAPLANCY,DENNIS OSADEBAY UNIVERSITY,ANWAI-ASABA
+            DELTA STATE,NIGERIA
+          </div>
+          <h3>02.&nbsp &nbsp Reception</h3>
+          <div class="text">
+            Saturday, April. 13, 2024 <br />
+            LAMBIBELE'S PLACE,OPP GOVT HOUSE GATE ANWAI ROAD,ASABA,DELTA STATE
+          </div>
         </div>
-        <button class="video-prev-btn">previous</button>
-        <button class="video-next-btn">next</button>
       </div>
-
-      <div class="love-story-section">
-      <h2>My personal Words</h2>
-      <p>I may not be the best outthere, but trust me nobody can love you the way i love you.i know there are lots of fear you have but i want you to know that i really love you with everything i hold dear <br>please know that i am here for you ,supporting you every step of the way.Your happiness and well-being are really important to me/p>
-        <p><b>what i want you to take from all this is that my love for you is genuine and unwavering.i am committed to invest the time,effort it takes to win you over completely </b></p>
-        <p><b>from the moment we met,there was a connection between us that i couldn't ignore.Getting to know you has been an amazing journey, and with each passing day my love for you has grown stronger</b></p>
-        <p><b>The way you make me feel,the way you understand me,the way you love me and the way we connect on so many levels is truly special and i wont throw it away</b></p>
     </div>
 
-    <div class="quotes-section">
-      <h2>Quotes</h2>
-      <blockquote>"Love is not just a feeling, it's an adventure."<br>"Love will always win"</blockquote>
-      <blockquote>VEE i really love you </blockquote>
-    </div>
+    
 
-    <div class="memories-section">
-      <h2>Memories</h2>
-      <p>Our first date:</p>
-      <img src="image/first date.JPG" alt="Memory 1" />
-      <!-- Add more memories content here -->
-    </div>
+        <div class="gallery hz-margin reveal">
+          <div class="gallery-img"></div>
+          <img src="image/wedding 33.jpg" alt="" />
+          <div class="gallery-img"></div>
+          <img src="image/wedding2.jpg" alt="" />
+          <div class="gallery-img"></div>
+          <img src="image/wwww2.jpg" alt="" />
+        </div>
 
-    <div class="messages-section">
-      <h2>Messages</h2>
-      <form id="message-form">
-        <input type="text" id="name-input"placeholder="Your Name" required>
-        <textarea id="message-input"placeholder="Your Message" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-      <div id="message-list"></div>
+        <div class="quote reveal">
+          <h1>
+            “To the world you are one person, but to one person you are the
+            world”.
+          </h1>
+          <div class="author text">Anonymous</div>
+        </div>
+
+        <div class="hands" id="parallax1"></div>
+
+        <div id="stay">
+          <h2 class="reveal">Travel and Stay</h2>
+          <div class="stay-container reveal">
+            <div class="stay-item">
+              <h3>
+                01. <br />
+                Getting There
+              </h3>
+              <div class="text">
+                Easy-to-follow <br />
+                directions to the venue
+              </div>
+              <div class="text links">MAP & DETAILS</div>
+            </div>
+            <div class="stay-item">
+              <h3>
+                02. <br />
+                Once You're There
+              </h3>
+              <div class="text">
+                Some fun things to do in <br />
+                the area
+              </div>
+              <div class="text links">OUR RECOMMENDATIONS</div>
+            </div>
+            <div class="stay-item">
+              <h3>
+                03. <br />
+                Where to Stay
+              </h3>
+              <div class="text">
+                Hotels and B&Bs <br />
+                to check out
+              </div>
+              <div class="text links">LODGING OPTIONS</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="registry">
+          <div class="registry-container reveal">
+            <h3>Promises</h3>
+            <div class="text">
+              PROMISE TO LOVE EACH OTHER TILL JESUS COME
+            </div>
+            <button class="huge-btn text">BLESS US</button>
+          </div>
+        </div>
+
+        <div class="parting-message reveal">
+          <h1>Hope to See You!</h1>
+          <button class="huge-btn">RSVP</button>
+        </div>
+
+        <footer>
+          <h2>Give us a Call</h2>
+          <h2>OGHENEFEGOR: 2347039438638</h2>
+          <h2>SCHOLASTISCA: 2349136113317</h2>
+          <div class="text">
+            © 2024 for Fegor and Sholar. Made by
+            <a href="https://twitter.com/NathArchak" class="text"
+              >@Charliebonsky</a
+            >
+          </div>
+        </footer>
       </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
